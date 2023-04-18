@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  background: url(../imgs/heroes-bg.71ab9a13d73de3860763.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+::-webkit-scrollbar {
+  color: #ff4d30;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4d30;
+  border-radius: 25px;
+}
+
+main .hero-banner .container {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
+}
+
+main .hero-banner .container,
+main .clients .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .hero-banner .container {
+  height: 50vh;
+}
+
+main .hero-banner .container h3 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+}
+
+main .hero-banner .container p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main .hero-banner .container p a {
+  color: #000;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+main .hero-banner .container p a:hover {
+  color: #ff4d30;
+}
+
+/* Clients */
+main .clients {
+  padding: 100px 0px;
+}
+
+main .clients .container .clients-title {
+  text-align: center;
+}
+
+main .clients .container .clients-title h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+main .clients .container .clients-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+
+main .clients .container .clients-title p {
+  max-width: 60%;
+  margin: 0 auto;
+  color: #706f7b;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+main .clients .container .row {
+  display: flex;
+  column-gap: 50px;
+  margin: 30px 0px;
+}
+
+main .clients .container .row .col {
+  position: relative;
+  flex-basis: 50%;
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .08);
+  padding: 3.5rem;
+}
+
+main .clients .container .row .col blockquote>p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0px 0px 45px 0px;
+}
+
+main .clients .container .row .col .profile-quotes {
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+main .clients .container .row .col .profile-quotes .profile {
+  display: flex;
+  align-items: center;
+}
+
+main .clients .container .row .col .profile-quotes .profile .profile-img {
+  width: 75px;
+  height: 75px;
+}
+
+main .clients .container .row .col .profile-quotes .profile .profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main .clients .container .row .col .profile-quotes .profile span {
+  margin-left: 25px;
+  color: #000;
+}
+
+main .clients .container .row .col .profile-quotes .profile span>h4 {
+  font-size: 1.1rem;
+}
+
+main .clients .container .row .col .profile-quotes .profile span>p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .clients .container .row .col .profile-quotes .icon i {
+  color: #ff4d30;
+  font-size: 4rem;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/* Touch With Us */
+main .touch-with-us {
+  background-image: url(../imgs/book-banner.09fcba44170a314c81a8.png);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 20vh;
+  margin-top: 7rem;
+  position: relative;
+  width: 100%;
+}
+
+main .touch-with-us .bg-overlay {
+  background-color: #2d2d2d;
+  height: 100%;
+  opacity: .89;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+main .touch-with-us .bg-overlay .container .text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  height: 23.5vh;
+}
+
+main .touch-with-us .bg-overlay .container .text-content h2 {
+  color: #Fff;
+  font-size: 1.8rem;
+}
+
+main .touch-with-us .bg-overlay .container .text-content span {
+  align-items: center;
+  color: #ff4d30;
+  display: flex;
+  font-size: 1.8rem;
+  gap: 1rem;
+  white-space: nowrap;
+}

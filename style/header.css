@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .container {
+  padding: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo .logo-box {
+  width: 140px;
+}
+
+header .container .logo .logo-box img {
+  width: 100%;
+}
+
+
+header .container .menu ul {
+  display: flex;
+}
+
+header .container .menu ul li {
+  list-style: none;
+  margin: 0px 12px;
+}
+
+header .container .menu ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+header .container .menu ul li a:hover {
+  color: #ff4d30;
+}
+
+header .container .nav-buttons ul {
+  display: flex;
+}
+
+header .container .nav-buttons ul li {
+  list-style: none;
+  margin: 0px 15px;
+}
+
+header .container .nav-buttons ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+header .container .nav-buttons ul li:first-child {
+  padding: 0.7rem 1.7rem;
+}
+
+header .container .nav-buttons ul li:first-child a:hover {
+  color: #ff4d30;
+}
+
+header .container .nav-buttons ul li:last-child {
+  background-color: #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35);
+  color: #fff;
+  padding: 0.7rem 1.7rem;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+header .container .nav-buttons ul li:last-child a {
+  color: #fff;
+}
+
+header .container .nav-buttons ul li:last-child:hover {
+  box-shadow: 0 10px 15px 0 rgb(255 83 48 / 50%);
+  background-color: #fa4226;
+}
+
+/* Header Account */
+header .container .nav-buttons-account ul {
+  display: flex;
+}
+
+header .container .nav-buttons-account ul li {
+  list-style: none;
+  margin: 0px 15px;
+}
+
+header .container .nav-buttons-account ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all .3s;
+}
+
+header .container .nav-buttons-account ul li:first-child a:hover {
+  color: #ff4d30;
+}
+
+@media only screen and (max-width: 767px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .container .menu ul,
+  header .container .nav-buttons ul {
+    display: block;
+    text-align: center;
+  }
+
+  header .container .menu ul li {
+    width: 100%;
+    padding: 15px 0px;
+  }
+
+  main {
+    margin: 100px 0px;
+  }
+
+}
+
+/* Tablet Media Device */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header .container .logo {
+    display: block;
+  }
+
+  header .container .menu ul li a,
+  header .container .nav-buttons ul li a {
+    font-size: 0.9rem;
+  }
+
+  header .container .nav-buttons {
+    margin: 20px 0px 0px 0px;
+  }
+}

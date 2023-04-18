@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  background: url(../imgs/log-in-page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+::-webkit-scrollbar {
+  color: #ff4d30;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4d30;
+  border-radius: 25px;
+}
+
+main .login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main .login-page .container .login-form {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-image: url(../imgs/book-bg.6f629a1041e9fd9c6685.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+  padding: 2rem 2.5rem 3rem 3.5rem;
+  text-align: center;
+}
+
+main .login-page .container .login-form .primary-img {
+  width: 350px;
+  margin: 0 auto;
+}
+
+main .login-page .container .login-form .primary-img img {
+  width: 100%;
+}
+
+main .login-page .container .login-form h2 {
+  font-size: 2rem;
+}
+
+main .login-page .container .login-form p {
+  margin: 0 auto;
+  font-size: 1rem;
+  width: 60%;
+}
+
+main .login-page .container .login-form form .fields {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+main .login-page .container .login-form form .fields label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px;
+  font-weight: 600;
+}
+
+main .login-page .container .login-form form .fields label i {
+  color: #ff4d30;
+  margin-right: 5px;
+}
+
+main .login-page .container .login-form form .fields label>span {
+  color: #ff4d30;
+  margin-left: 3px;
+}
+
+main .login-page .container .login-form form .fields input {
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+main .login-page .container .login-form button {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35);
+  padding: 15px 10px;
+  transition: all .3s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .login-page .container .login-form button a {
+  text-decoration: none;
+  color: #Fff;
+}
+
+main .login-page .container .login-form .forgot-password {
+  width: 100%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 15px 0px;
+  transition: all .3s ease-in-out;
+}
+
+main .login-page .container .login-form .forgot-password:hover {
+  text-decoration: underline;
+  color: #ff4d30;
+}
+
+main .login-page .container .login-form .already-member {
+  color: #000;
+  margin: 20px 0px;
+}
+
+main .login-page .container .login-form a {
+  text-decoration: none;
+  color: #ff4d30;
+  transition: all .3s ease-in-out;
+}
+
+main .login-page .container .login-form a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  main .login-page .container .login-form .primary-img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  main .login-page .container .login-form h2 {
+    font-size: 1.3rem;
+  }
+
+  main .login-page .container .login-form p {
+    margin: 0 auto;
+    font-size: 0.7rem;
+    width: 60%;
+  }
+}
