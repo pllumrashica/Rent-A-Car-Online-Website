@@ -167,4 +167,18 @@ footer .container .row .col:nth-child(4) li:nth-child(4) button {
     text-align: center;
     margin: 20px 0px;
   }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer .container .row {
+    flex-direction: column;
+  }
+
+  footer .container .row .col {
+    display: block;
+    width: 100%;
+    flex-basis: auto;
+    margin: 25px 0px;
+  }
 }

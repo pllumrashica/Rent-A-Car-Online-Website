@@ -207,3 +207,56 @@ main .touch-with-us .bg-overlay .container .text-content span {
   gap: 1rem;
   white-space: nowrap;
 }
+
+@media only screen and (max-width: 767px) {
+  main .contact-us .container .row {
+    flex-direction: column;
+  }
+
+  main .contact-us .container .row .col {
+    margin: 20px 0px;
+  }
+
+  main .touch-with-us {
+    background-image: url(../imgs/book-banner.09fcba4….png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2rem 0;
+    display: flex;
+    height: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  main .touch-with-us .bg-overlay {
+    padding: 2rem 0;
+    background-color: #2d2d2d;
+    background-size: 100% 100%;
+    height: auto;
+    opacity: .89;
+    position: absolute;
+    width: 100%;
+  }
+
+  main .touch-with-us .bg-overlay .container .text-content h2 {
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  main .touch-with-us .bg-overlay .container .text-content span {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  main .touch-with-us .bg-overlay .container .text-content {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  main .touch-with-us .bg-overlay .container .text-content {
+    flex-direction: column;
+  }
+}

@@ -80,7 +80,7 @@
         <div class="row">
           <div class="col">
             <div class="field">
-              <label for="carType"><i class="fa-solid fa-car"></i> Zgjedh llojin e makinës tuaj <span>*</span></label>
+              <label><i class="fa-solid fa-car"></i> Zgjedh llojin e makinës tuaj <span>*</span></label>
               <select>
                 <option value="">Select your car type</option>
                 <option value="audi">Audi A1 S-Line</option>
@@ -95,7 +95,7 @@
 
           <div class="col">
             <div class="field">
-              <label for="carType"><i class="fa-solid fa-location-dot"></i> Merr në <span>*</span></label>
+              <label><i class="fa-solid fa-location-dot"></i> Merr në <span>*</span></label>
               <select>
                 <option value="">Select pick up location</option>
                 <option value="prishtina">Prishtine</option>
@@ -110,7 +110,7 @@
 
           <div class="col">
             <div class="field">
-              <label for="carType"><i class="fa-solid fa-location-dot"></i> Leje në <span>*</span></label>
+              <label><i class="fa-solid fa-location-dot"></i> Leje në <span>*</span></label>
               <select>
                 <option value="">Select drop off location</option>
                 <option value="gjilan">Gjilan</option>
@@ -128,14 +128,14 @@
           <div class="col">
             <div class="field">
               <label for="date"><i class="fa-regular fa-calendar-days"></i> Merr në <span>*</span></label>
-              <input type="date">
+              <input type="date" id="date" name="date">
             </div>
           </div>
 
           <div class="col">
             <div class="field">
-              <label for="carType"><i class="fa-solid fa-location-dot"></i> Leje në <span>*</span></label>
-              <input type="date">
+              <label><i class="fa-solid fa-location-dot"></i> Leje në <span>*</span></label>
+              <input type="date" id="secondDate" name="date">
             </div>
           </div>
 
@@ -475,63 +475,41 @@
             ndaj shqetësimeve dhe pyetjeve të zakonshme.</p>
         </div>
 
-        <div class="all-questions">
-          <div class="faq-box active-question">
-            <div class="faq-question">
-              <p>1. Çfarë është e veçantë në lidhje me krahasimin e marrëveshjeve të makinave me qira?</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
+        <div class="faq-box">
+          <details class="active" id="question1" open>
+            <summary>Çfarë është e veçantë në lidhje me krahasimin e marrëveshjeve të makinave me qira? <i
+                class="fa-solid fa-angle-down"></i></summary>
+            <p>Krahasimi i marrëveshjeve të makinave me qira është i rëndësishëm pasi ndihmon në gjetjen e marrëveshjes
+              më të mirë që i
+              përshtatet buxhetit dhe kërkesave tuaja, duke siguruar që ju të merrni vlerën më të madhe për paratë
+              tuaja. Duke
+              krahasuar opsione të ndryshme, mund të gjeni oferta që ofrojnë çmime më të ulëta, shërbime shtesë ose
+              modele më të mira
+              makinash. Ju mund të gjeni oferta për marrjen me qira të makinave duke hulumtuar në internet dhe duke
+              krahasuar çmimet
+              nga kompani të ndryshme me qira.</p>
+          </details>
 
-            <div class="faq-description">
-              <p>Krahasimi i marrëveshjeve të makinave me qira është i rëndësishëm pasi ndihmon në gjetjen e
-                marrëveshjes më të mirë që i
-                përshtatet buxhetit dhe kërkesave tuaja, duke siguruar që ju të merrni vlerën më të madhe për paratë
-                tuaja. Duke
-                krahasuar opsione të ndryshme, mund të gjeni oferta që ofrojnë çmime më të ulëta, shërbime shtesë ose
-                modele më të mira
-                makinash. Ju mund të gjeni oferta për marrjen me qira të makinave duke hulumtuar në internet dhe duke
-                krahasuar çmimet
-                nga kompani të ndryshme me qira.</p>
-            </div>
-          </div>
+          <details id="question2">
+            <summary>Si i gjej ofertat e marrjes me qira të makinave? <i class="fa-solid fa-angle-down"></i></summary>
+            <p>Për të gjetur oferta për makina me qira në faqen tonë të internetit, klientët mund të shfletojnë
+              seksionin tonë të
+              promovimeve dhe zbritjeve speciale.
+              Klientët mund të përdorin funksionin e kërkimit të faqes sonë të internetit për të krahasuar çmimet dhe
+              për të gjetur
+              ofertat më të mira të marrjes me qira të makinave që i përshtaten buxhetit dhe preferencave të tyre.</p>
+          </details>
 
-          <div class="faq-box">
-            <div class="faq-question">
-              <p>2. Si i gjej ofertat e marrjes me qira të makinave?</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-
-            <div class="faq-description">
-              <p>Krahasimi i marrëveshjeve të makinave me qira është i rëndësishëm pasi ndihmon në gjetjen e
-                marrëveshjes më të mirë që i
-                përshtatet buxhetit dhe kërkesave tuaja, duke siguruar që ju të merrni vlerën më të madhe për paratë
-                tuaja. Duke
-                krahasuar opsione të ndryshme, mund të gjeni oferta që ofrojnë çmime më të ulëta, shërbime shtesë ose
-                modele më të mira
-                makinash. Ju mund të gjeni oferta për marrjen me qira të makinave duke hulumtuar në internet dhe duke
-                krahasuar çmimet
-                nga kompani të ndryshme me qira.</p>
-            </div>
-          </div>
-
-          <div class="faq-box">
-            <div class="faq-question">
-              <p>3. Si mund të gjej çmime kaq të ulëta të makinave me qira?</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-
-            <div class="faq-description">
-              <p>Krahasimi i marrëveshjeve të makinave me qira është i rëndësishëm pasi ndihmon në gjetjen e
-                marrëveshjes më të mirë që i
-                përshtatet buxhetit dhe kërkesave tuaja, duke siguruar që ju të merrni vlerën më të madhe për paratë
-                tuaja. Duke
-                krahasuar opsione të ndryshme, mund të gjeni oferta që ofrojnë çmime më të ulëta, shërbime shtesë ose
-                modele më të mira
-                makinash. Ju mund të gjeni oferta për marrjen me qira të makinave duke hulumtuar në internet dhe duke
-                krahasuar çmimet
-                nga kompani të ndryshme me qira.</p>
-            </div>
-          </div>
+          <details id="question3">
+            <summary>Si mund të gjej çmime kaq të ulëta të makinave me qira? <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <p>Ne ofrojmë çmime konkurruese të makinave me qira duke zbatuar çmime dinamike që rregullojnë tarifat e
+              qirasë bazuar në
+              faktorë si kërkesa, sezonaliteti dhe disponueshmëria.
+              Klientët mund të gjejnë çmime të ulëta të makinave me qira duke kontrolluar seksionin tonë të promovimeve
+              dhe zbritjeve
+              speciale në faqen tonë të internetit.</p>
+          </details>
         </div>
       </div>
     </section>

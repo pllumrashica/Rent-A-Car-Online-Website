@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 ::-webkit-scrollbar {
   color: #ff4d30;
   border-radius: 5px;
@@ -16,6 +15,7 @@
   background-color: #ff4d30;
   border-radius: 25px;
 }
+
 
 body {
   background-color: #f8f8f8;
@@ -501,6 +501,7 @@ main .choose-us .container .row .col:first-child p {
 }
 
 main .choose-us .container .row .col:first-child button {
+  display: flex;
   background-color: #ff4d30;
   border: 2px solid #ff4d30;
   border-radius: 0.3rem;
@@ -692,7 +693,7 @@ main .faq-section .container .faq-title {
 main .faq-section .container .faq-title h4 {
   font-family: 'Rubik', sans-serif;
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 main .faq-section .container .faq-title h2 {
@@ -701,111 +702,86 @@ main .faq-section .container .faq-title h2 {
 }
 
 main .faq-section .container .faq-title p {
-  max-width: 45%;
+  max-width: 60%;
   margin: 0 auto;
   color: #706f7b;
   font-family: 'Rubik', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
-main .faq-section .container .all-questions {
-  margin: 150px 0px;
-}
-
-main .faq-section .container .all-questions .faq-box {
-  width: 50%;
+main .faq-section .container .faq-box {
+  margin: 100px auto;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+  color: #010103;
   cursor: pointer;
+}
+
+main .faq-section .container .faq-box details {
   background-color: #fff;
-  margin: 0 auto;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
-  color: #010103;
+  padding: 15px 30px;
 }
 
-main .faq-section .container .all-questions .faq-box:nth-child(2) {
-  background-color: #fff;
-}
-
-main .faq-section .container .all-questions .faq-box:nth-child(2)>.faq-question {
-  background-color: #fff;
-  box-shadow: none;
-}
-
-main .faq-section .container .all-questions .faq-box:nth-child(2)>.faq-question p {
-  color: #000;
-}
-
-main .faq-section .container .all-questions .faq-box:nth-child(2)>.faq-question>i {
-  color: #000;
-}
-
-main .faq-section .container .all-questions .faq-box:nth-child(2)>.faq-description {
-  display: none;
-}
-
-main .faq-section .container .all-questions .faq-box .faq-question {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+main .faq-section .container .faq-box details.active {
   background-color: #ff4d30;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35);
-  color: #fff;
-  padding: 1.4rem 2rem;
-}
-
-main .faq-section .container .all-questions .faq-box .faq-question p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-main .faq-section .container .all-questions .faq-box .faq-question i {
-  font-size: 1rem;
-  color: #fff;
-}
-
-.active-question {
   padding: 0px;
-  background-color: #ff4d30;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35);
-  color: #fff;
 }
 
-main .faq-section .container .all-questions .faq-description {
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
-  color: #010103;
-  padding: 1rem 1.3rem;
-}
-
-main .faq-section .container .all-questions .faq-description p {
+main .faq-section .container .faq-box details.active>p {
+  background-color: #fff;
+  padding: 15px 30px;
   color: #706f7b;
   font-family: Rubik, sans-serif;
+  font-size: 1.1rem;
+}
+
+main .faq-section .container .faq-box details.active summary {
+  color: #Fff;
+  padding: 15px 30px;
+  background-color: #ff4d30;
   font-size: 1rem;
-  line-height: 1.6;
-  padding: 0rem 1.3rem;
+  font-weight: 500;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35);
 }
 
-main .faq-section .container .all-questions .faq-box:last-child {
-  background-color: #fff;
-}
-
-main .faq-section .container .all-questions .faq-box:last-child>.faq-question {
-  background-color: #fff;
-  box-shadow: none;
-}
-
-main .faq-section .container .all-questions .faq-box:last-child>.faq-question p {
+main .faq-section .container .faq-box details summary {
   color: #000;
 }
 
-main .faq-section .container .all-questions .faq-box:last-child>.faq-question>i {
+main .faq-section .container .faq-box details.active>summary {
+  list-style-type: '1. ';
+}
+
+main .faq-section .container .faq-box details:nth-child(2)>summary {
+  list-style-type: '2. ';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main .faq-section .container .faq-box details:nth-child(3)>summary {
+  list-style-type: '3. ';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main .faq-section .container .faq-box details:nth-child(2)>p,
+main .faq-section .container .faq-box details:nth-child(3)>p {
+  background-color: #fff;
+  padding: 15px 0px;
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.1rem;
+}
+
+main .faq-section .container .faq-box details:nth-child(2)>summary>i,
+main .faq-section .container .faq-box details:nth-child(3)>summary>i {
   color: #000;
 }
 
-main .faq-section .container .all-questions .faq-box:last-child>.faq-description {
-  display: none;
-}
+
+/* Download Section */
 
 main .download {
   background-color: #f8f8f8;
@@ -849,6 +825,9 @@ main .download .container .stores-image img:first-child {
 @media only screen and (max-width: 767px) {
   body {
     background: none;
+  }
+
+  html {
     overflow-x: hidden;
   }
 
@@ -866,8 +845,8 @@ main .download .container .stores-image img:first-child {
   main .clients .container,
   main .ads .container,
   main .download .container {
-    width: 100%;
-    margin: 0px auto;
+    width: 95%;
+    margin: 0 auto;
   }
 
   main .hero-banner .container .row {
@@ -936,8 +915,21 @@ main .download .container .stores-image img:first-child {
     flex-direction: column;
   }
 
+
   main .choose-us .container .row .col:last-child {
     margin: 15px 0px;
+  }
+
+  main .choose-us .container .row .col:last-child .row-inside-col .content h4 {
+    font-size: 18px;
+  }
+
+  main .choose-us .container .row .col:last-child .row-inside-col .content p {
+    width: 100%;
+  }
+
+  main .clients {
+    padding: 0px;
   }
 
   main .clients .container .row {
@@ -946,20 +938,31 @@ main .download .container .stores-image img:first-child {
 
   main .clients .container .row .col {
     margin: 20px 0px;
-    padding: 3.5rem 3.5rem 4rem 3.5rem;
+    padding: 20px 20px 70px 20px;
   }
 
   main .clients .container .row .col profile-quotes {
     margin: 25px 0px;
   }
 
-  main .faq-section .container .all-questions .faq-box {
-    width: 90%;
+  main .clients .container .row .col blockquote>p {
+    font-size: 14px;
+  }
+
+  main .faq-section .container .faq-box {
+    width: 95%;
   }
 
   main .download {
-    height: 100vh;
-    padding: 5rem 0rem;
+    padding: 2.5rem 0rem;
+    margin: 0 auto;
+  }
+
+  main .download .container .text {
+    max-width: 95%;
+    margin: 0 auto;
+    justify-items: center;
+    text-align: center;
   }
 
   main .download .container .text h2 {
@@ -968,18 +971,78 @@ main .download .container .stores-image img:first-child {
 
   main .download .container .text p {
     font-size: 1rem;
+    text-align: center;
+    width: 95%;
+  }
+
+  main .download .container .stores-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
   }
 
   main .download .container .stores-image img {
-    width: 200px;
+    width: 100px;
+    margin: 0px 5px;
   }
 
-  main .download {
-    height: 70vh;
+  main .download .container .stores-image img:first-child {
+    margin-right: 0px;
   }
 
-  main .download .container .stores-image img {
-    width: 150px;
+  main .vehicle-models .container .row .car {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  main .vehicle-models .container .row .car img {
+    width: 100%;
+  }
+
+  main .vehicle-models .container .row .buttons-box .buttons {
+    padding: 1rem;
+    margin: 10px 0px;
+  }
+
+  main .hero-banner .container .row .col .hero-banner-buttons {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  main .hero-banner .container .row .col .hero-banner-buttons button {
+    margin: 10px 0px;
+    cursor: pointer;
+    background-color: #010103;
+    border: 2px solid #010103;
+    border-radius: 0.3rem;
+    padding: 1rem 1rem;
+    transition: all .3s;
+    margin-left: 12px;
+  }
+
+  main .clients .container .row .col .profile-quotes .icon {
+    display: none;
+  }
+
+  main .clients .container .row .col .profile-quotes .profile span>h4 {
+    font-size: 0.8rem;
+  }
+
+  main .clients .container .row .col .profile-quotes .profile span>p {
+    font-size: 0.8rem;
+  }
+
+  main .plans .container .text-center h4 {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
+
+  main .plans .container .text-center h1 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+
+  main .choose-us .container .row .col:first-child h2 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
 }
 
@@ -1009,6 +1072,11 @@ main .download .container .stores-image img:first-child {
     margin: 80px auto;
   }
 
+
+  main .hero-banner .container {
+    margin-bottom: 0px;
+  }
+
   main .hero-banner .container .row {
     flex-direction: column;
   }
@@ -1023,6 +1091,10 @@ main .download .container .stores-image img:first-child {
 
   main .hero-banner .container .row .col {
     text-align: center;
+  }
+
+  main .hero-banner .container .row .col:last-child {
+    display: block;
   }
 
   main .book-car .container .row {
@@ -1092,13 +1164,13 @@ main .download .container .stores-image img:first-child {
     margin: 25px 0px;
   }
 
-  main .faq-section .container .all-questions .faq-box {
+  main .faq-section .container .faq-box {
     width: 90%;
   }
 
   main .download {
     height: 100vh;
-    padding: 5rem 0rem;
+    padding: 2.5rem 0rem;
   }
 
   main .download .container .text h2 {
@@ -1113,11 +1185,11 @@ main .download .container .stores-image img:first-child {
     width: 200px;
   }
 
-  main .download {
-    height: 70vh;
-  }
-
   main .download .container .stores-image img {
     width: 150px;
+  }
+
+  main .download .container .stores-image {
+    margin: 15px 0px 0px 0px;
   }
 }
