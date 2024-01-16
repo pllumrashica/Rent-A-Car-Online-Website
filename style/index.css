@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 
 ::-webkit-scrollbar {
   color: #ff4d30;
@@ -341,6 +346,21 @@ main .vehicle-models .container .row .car {
   flex-basis: 60%;
   text-align: center;
   align-self: center;
+}
+
+#theImage {
+  min-width: 100%;
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view(500px 50px);
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 main .vehicle-models .container .row .car-info {
@@ -1192,4 +1212,16 @@ main .download .container .stores-image img:first-child {
   main .download .container .stores-image {
     margin: 15px 0px 0px 0px;
   }
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/index.css">
   <link rel="stylesheet" href="./style/footer.css">
-  <title>Rent a Car Pllumi | Kryefaqja</title>
+  <title>Rent a Car Online | Kryefaqja</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
             </p>
 
             <div class="hero-banner-buttons">
-              <button><a href="#">Rezervo Udhëtimin <i class="fa-solid fa-circle-check"></i></a></button>
+              <button><a href="#bookCar">Rezervo Udhëtimin <i class="fa-solid fa-circle-check"></i></a></button>
 
               <button><a href="#">Mëso më shumë <i class="fa-solid fa-angle-right"></i></a></button>
             </div>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section class="book-car">
+    <section class="book-car" id="bookCar">
       <div class="container">
         <h2>Rezervoni një makinë</h2>
 
@@ -207,27 +207,27 @@
 
         <div class="row">
           <div class="buttons-box">
-            <div class="buttons colored-box" id="btn-1" onclick="pictureChangeFirst()">
+            <div class="buttons colored-box" id="x1">
               Audi A1 S-Line
             </div>
 
-            <div class="buttons" id="btn-2" onclick="pictureChange()">
+            <div class="buttons" id="x2">
               VW Golf 6
             </div>
 
-            <div class="buttons" id="btn-3" onclick="pictureChangeOne()">
+            <div class="buttons" id="x3">
               Toyota Camry
             </div>
 
-            <div class="buttons" id="btn-4" onclick="pictureChangeSecond()">
+            <div class="buttons" id="x4">
               BMW 320 ModernLine
             </div>
 
-            <div class="buttons" id="btn-5" onclick="pictureChangeThird()">
+            <div class="buttons" id="x5">
               Mercedes-Benz GLK
             </div>
 
-            <div class="buttons" id="btn-6" onclick="pictureChangeFourth()">
+            <div class="buttons" id="x6">
               VW Passat CC
             </div>
           </div>
@@ -239,24 +239,24 @@
           <div class="car-info">
             <div class="car-description">
               <div class="car-price">
-                <h3 id="span1">50€</h3><span>/ qira në ditë</span>
+                <h3 id="priceCar">70€</h3><span>/ qira në ditë</span>
               </div>
               <div class="car-table">
-                <div class="car-table-row">
-                  <div class="car-table-col">
-                    <span>Modeli</span>
-                  </div>
-                  <div class="car-table-col">
-                    <span>Audi</span>
-                  </div>
-                </div>
-
                 <div class="car-table-row">
                   <div class="car-table-col">
                     <span>Marka</span>
                   </div>
                   <div class="car-table-col">
-                    <span>A1</span>
+                    <span id="carName">Audi</span>
+                  </div>
+                </div>
+
+                <div class="car-table-row">
+                  <div class="car-table-col">
+                    <span>Modeli</span>
+                  </div>
+                  <div class="car-table-col">
+                    <span id="carModel">A1</span>
                   </div>
                 </div>
 
@@ -265,7 +265,7 @@
                     <span>Viti</span>
                   </div>
                   <div class="car-table-col">
-                    <span>2012</span>
+                    <span id="carYear">2014</span>
                   </div>
                 </div>
 
@@ -293,7 +293,7 @@
                     <span>Transmetimi</span>
                   </div>
                   <div class="car-table-col">
-                    <span>Manual</span>
+                    <span id="carTransmition">Automatik</span>
                   </div>
                 </div>
 
@@ -303,7 +303,7 @@
                     <span>Karburanti</span>
                   </div>
                   <div class="car-table-col">
-                    <span>Benzinë</span>
+                    <span id="carFuel">Naftë</span>
                   </div>
                 </div>
               </div>
@@ -537,15 +537,15 @@
       <div class="row">
         <div class="col">
           <ul>
-            <li><span>PLLUMI</span> Rent a Car</li>
+            <li><span>ONLINE</span> Rent a Car</li>
             <li>
               <p>Ne ofrojmë një gamë të madhe automjetesh për të gjitha nevojat tuaja të drejtimit. Ne kemi makinën
                 perfekte për të
                 plotësuar nevojat tuaja.</p>
             </li>
             <li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp; (383) -967-554</a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacarpllumi.com</a></li>
-            <li><a href="#">Designed by Pellumb Rashica</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacaronline.com</a></li>
+            <li><a href="#">Designed by Pellumb Rashica,Amar Mejzini,Erdon Zeqiri,Leonit Mehaj,Ensar Aliu.</a></li>
           </ul>
         </div>
 
@@ -570,18 +570,21 @@
         </div>
 
         <div class="col">
-          <ul>
+          <ul id="newsletterForm">
             <li><span>ABONIM</span></li>
             <li>Abonohuni në adresën tuaj të emailit për lajmet dhe përditësimet më të fundit.</li>
-            <li><input type="email" placeholder="Shkruaj adresën e emailit"></li>
-            <li><button>Dergo</button></li>
+            <li><input type="email" name="email" id="subscribeEmail" placeholder="Shkruaj adresën e emailit"></li>
+            <li><button id="subscribe">Dergo</button></li>
+            <p class="success-message" id="successMessage" style="display: none;">Thank you for subscribing!</p>
+            <p class="error-message" id="errorMessage" style="display: none;">Invalid email address. Please try again.</p>
           </ul>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="./javascript/main.js"></script>
+  <script type="text/javascript" src="./javascript/cars.js"></script>
+  <script src="./javascript/email.js"></script>
 </body>
 
 

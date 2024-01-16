@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/testimonials.css">
   <link rel="stylesheet" href="./style/footer.css">
-  <title>Rent a Car Pllumi | Dëshmitë</title>
+  <title>Rent a Car Online | Dëshmitë</title>
 </head>
 
 <body>
@@ -138,15 +138,15 @@
       <div class="row">
         <div class="col">
           <ul>
-            <li><span>PLLUMI</span> Rent a Car</li>
+            <li><span>ONLINE</span> Rent a Car</li>
             <li>
               <p>Ne ofrojmë një gamë të madhe automjetesh për të gjitha nevojat tuaja të drejtimit. Ne kemi makinën
                 perfekte për të
                 plotësuar nevojat tuaja.</p>
             </li>
             <li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp; (383) -967-554</a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacarpllumi.com</a></li>
-            <li><a href="#">Designed by Pellumb Rashica</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacaronline.com</a></li>
+            <li><a href="#">Designed by Pellumb Rashica,Amar Mejzini,Erdon Zeqiri,Leonit Mehaj,Ensar Aliu.</a></li>
           </ul>
         </div>
 
@@ -174,13 +174,18 @@
           <ul>
             <li><span>ABONIM</span></li>
             <li>Abonohuni në adresën tuaj të emailit për lajmet dhe përditësimet më të fundit.</li>
-            <li><input type="email" placeholder="Shkruaj adresën e emailit"></li>
-            <li><button>Dergo</button></li>
+            <li><input type="email" id="subscribeEmail" name="email" placeholder="Shkruaj adresën e emailit"></li>
+            <li><button id="subscribe">Dergo</button></li>
+            <p class="success-message" id="successMessage" style="display: none;">Thank you for subscribing!</p>
+            <p class="error-message" id="errorMessage" style="display: none;">Invalid email address. Please try again.</p>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="./javascript/email.js"></script>
+
 </body>
 
 </html>

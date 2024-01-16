@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/log-in.css">
   <link rel="stylesheet" href="./style/footer.css">
-  <title>Rent a Car Pllumi | Hyni</title>
+  <title>Rent a Car Online | Hyni</title>
 </head>
 
 <body>
@@ -29,18 +29,26 @@
           <p>Meqenëse ky është udhëtimi juaj i parë, do t'ju duhet të na jepni disa informacione përpara se të
             kontrolloni</p>
 
-          <form action="loginForm">
+          <form id="loginForm" action="loginForm">
             <div class="fields">
               <label for="email"><i class="fa-solid fa-envelope"></i>Emaili Juaj <span>*</span></label>
-              <input type="email" name="email" id="email" placeholder="Emaili Juaj">
+              <input type="email" name="loginEmail" id="loginEmail" placeholder="Emaili Juaj" required>
             </div>
 
             <div class="fields">
               <label for="password"><i class="fa-solid fa-lock"></i>Passwordi Juaj <span>*</span></label>
-              <input type="password" name="password" id="password" placeholder="Passwordi Juaj">
+              <input type="password" name="loginPassword" id="loginPassword" placeholder="Passwordi Juaj" required>
             </div>
           </form>
-          <button><a href="index-account.html">Hyni</a></button>
+          <button onclick="login()"><a>Hyni</a></button>
+             
+        <div class="alert hide" id="successAlert">
+          <span class="fas fa-exclamation-circle"></span>
+          <span class="msg">Jeni kyqur me sukses!</span>
+          <div class="close-btn">
+            <span class="fas fa-times"></span>
+          </div>
+        </div>
 
           <a href="#" class="forgot-password">Keni harruar fjalëkalimin?</a>
 
@@ -49,6 +57,8 @@
       </div>
     </section>
   </main>
+
+<script src="./javascript/register-and-login.js"></script>
 
 </body>
 

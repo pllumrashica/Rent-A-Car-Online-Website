@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/contact.css">
   <link rel="stylesheet" href="./style/footer.css">
-  <title>Rent a Car Pllumi | Kontakti</title>
+  <title>Rent a Car Online | Kontakti</title>
 </head>
 
 <body>
@@ -76,15 +76,15 @@
           </div>
 
           <div class="col">
-            <form action="contactUs">
+            <form action="from" id="form">
               <div class="fields">
-                <label for="fullName">Emri i Plotë <span>*</span></label>
-                <input type="text" id="fullName" name="fullName" placeholder="Sh.b: 'Pellumb Rashica' ">
+                <label for="name">Emri i Plotë <span>*</span></label>
+                <input type="text" id="from_name" name="from_name" placeholder="Sh.b: 'Pellumb Rashica' ">
               </div>
 
               <div class="fields">
                 <label for="email">Emaili Juaj <span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="emailijuaj@shembull.com">
+                <input type="email" id="email_id" name="email_id" placeholder="emailijuaj@shembull.com">
               </div>
 
               <div class="fields">
@@ -92,9 +92,10 @@
                 <textarea name="message" id="message" placeholder="Shkruaj ketu..."></textarea>
               </div>
 
+              <input id="button" type="submit" value="Send">
             </form>
-            <button>
-              <a href="#"><i class="fa-solid fa-envelope-open-text"></i>Dërgo Mesazhin</a></button>
+            
+             
           </div>
         </div>
       </div>
@@ -121,15 +122,15 @@
       <div class="row">
         <div class="col">
           <ul>
-            <li><span>PLLUMI</span> Rent a Car</li>
+            <li><span>ONLINE</span> Rent a Car</li>
             <li>
               <p>Ne ofrojmë një gamë të madhe automjetesh për të gjitha nevojat tuaja të drejtimit. Ne kemi makinën
                 perfekte për të
                 plotësuar nevojat tuaja.</p>
             </li>
             <li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp; (383) -967-554</a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacarpllumi.com</a></li>
-            <li><a href="#">Designed by Pellumb Rashica</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; support@rentacaronline.com</a></li>
+            <li><a href="#">Designed by Pellumb Rashica,Amar Mejzini,Erdon Zeqiri,Leonit Mehaj,Ensar Aliu.</a></li>
           </ul>
         </div>
 
@@ -157,13 +158,24 @@
           <ul>
             <li><span>ABONIM</span></li>
             <li>Abonohuni në adresën tuaj të emailit për lajmet dhe përditësimet më të fundit.</li>
-            <li><input type="email" placeholder="Shkruaj adresën e emailit"></li>
-            <li><button>Dergo</button></li>
+            <li><input type="email" name="email" id="subscribeEmail" placeholder="Shkruaj adresën e emailit"></li>
+            <li><button id="subscribe">Dergo</button></li>
+            <p class="success-message" id="successMessage" style="display: none;">Thank you for subscribing!</p>
+            <p class="error-message" id="errorMessage" style="display: none;">Invalid email address. Please try again.</p>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="./javascript/email.js"></script>
+  <script src="./javascript/contact.js"></script>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('UjzFsejqkEBEgHkWG')
+  </script>
 </body>
 
 </html>

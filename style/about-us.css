@@ -241,6 +241,7 @@ main .touch-with-us .bg-overlay .container .text-content span {
   display: flex;
   justify-content: center;
   column-gap: 50px;
+  margin: 50px 0 0 0;
 }
 
 .our-team .container .row .col {

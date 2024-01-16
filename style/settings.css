@@ -1,0 +1,234 @@
+body {
+    font-family: 'Poppins';
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 20px;
+}
+
+main .side-bar {
+    padding: 40px;
+    flex-basis: 25%;
+}
+
+main .side-bar .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .side-bar .profile .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+main .side-bar .profile .profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main .side-bar .profile a {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+main .side-bar .profile a {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #ff4d30;
+}
+
+main .side-bar .profile h2.profile-name {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+main .side-bar .profile span.profile-value {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main .side-bar .notification {
+    margin: 50px 0 0 0;
+}
+
+main .side-bar .notification h1.title {
+    font-family: 'Poppins';
+    font-size: 19px;
+}
+
+main .side-bar .notification .row-notify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+main .side-bar .notification .row-notify span {
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.switch {
+    --button-width: 2.5em;
+    --button-height: 1.5em;
+    --toggle-diameter: 1em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #4296f4;
+}
+
+.slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked+.slider {
+    background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked+.slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+
+.switch input[type="checkbox"]:active+.slider::after {
+    width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active+.slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+main .content {
+    flex-basis: 75%;
+}
+
+main .content .wrapper {
+    width: 90%;
+    padding: 20px;
+}
+
+main .content .wrapper .profile-save {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content .wrapper .profile-save h1 {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+main .content .wrapper .information button.save-changes {
+    background-color: transparent;
+    border: 2px solid #ff4d30;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+main .content .wrapper .information button.save-changes:hover {
+   background-color: #ff4d30;
+   color: #fff;
+}
+
+main .content .wrapper .profile-nav {
+    margin: 12px 0;
+    display: flex;
+}
+
+main .content .wrapper .profile-nav .col {
+    flex-basis: 16.66%;
+}
+
+main .content .wrapper .profile-nav .col span {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #ff4d30;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ff4d30;
+
+}
+main .content .wrapper .information .field {
+    margin: 15px 0;
+}
+
+main .content .wrapper .information label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0px;
+    font-weight: 600;
+}
+
+main .content .wrapper .information label i {
+    color: #ff4d30;
+    margin-right: 5px;
+}
+main .content .wrapper .information label>span {
+    color: #ff4d30;
+    margin-left: 3px;
+}
+
+main .content .wrapper .information input {
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+main .content .wrapper .information h1.password-title {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+main .content .wrapper .information .row {
+    margin: 15px 0;
+    display: flex;
+    column-gap: 20px;
+}
+
+main .content .wrapper .information .row .col {
+    flex-basis: 50%;
+}

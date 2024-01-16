@@ -142,7 +142,7 @@ main .contact-us .container .row .col form .fields textarea {
   padding: 19px 30px;
 }
 
-main .contact-us .container .row .col button {
+main .contact-us .container .row .col form #button {
   width: 100%;
   background-color: #ff4d30;
   border: 2px solid #ff4d30;
@@ -152,7 +152,7 @@ main .contact-us .container .row .col button {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  padding: 1.2rem 2rem;
+  padding: 1.1rem 2rem;
   transition: all .3s;
 }
 

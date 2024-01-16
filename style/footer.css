@@ -136,7 +136,7 @@ footer .container .row .col:nth-child(4) li:nth-child(3) input {
   line-height: 26px;
   margin-top: 1rem;
   outline: none;
-  padding: 10px 60px;
+  padding: 10px 60px 10px 20px;
   width: 100%;
 }
 
@@ -156,6 +156,18 @@ footer .container .row .col:nth-child(4) li:nth-child(4) button {
   width: -webkit-fit-content;
   width: fit-content;
   width: 100%;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {

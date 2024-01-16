@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/sign-up.css">
   <link rel="stylesheet" href="./style/footer.css">
-  <title>Rent a Car Pllumi | Regjistrohu</title>
+  <title>Rent a Car Online | Regjistrohu</title>
 </head>
 
 <body>
@@ -29,24 +29,24 @@
           <p>Meqenëse ky është udhëtimi juaj i parë, do t'ju duhet të na jepni disa informacione përpara se të
             kontrolloni</p>
 
-          <form action="loginForm">
-            <div class="fields">
-              <label for="email"><i class="fa-solid fa-user"></i>Emri i Plotë <span>*</span></label>
-              <input type="text" name="fullName" id="fullName" placeholder="Emri i Plotë">
-            </div>
+            <form id="registrationForm" action="loginForm">
+              <div class="fields">
+                <label for="email"><i class="fa-solid fa-user"></i>Emri i Plotë <span>*</span></label>
+                <input type="text" name="fullName" id="fullName" placeholder="Emri i Plotë" required>
+              </div>
 
 
-            <div class="fields">
-              <label for="email"><i class="fa-solid fa-envelope"></i>Emaili Juaj <span>*</span></label>
-              <input type="email" name="email" id="email" placeholder="Emaili Juaj">
-            </div>
+              <div class="fields">
+                <label for="email"><i class="fa-solid fa-envelope"></i>Emaili Juaj <span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="Emaili Juaj" required>
+              </div>
 
-            <div class="fields">
-              <label for="password"><i class="fa-solid fa-lock"></i>Passwordi Juaj <span>*</span></label>
-              <input type="password" name="password" id="password" placeholder="Passwordi Juaj">
-            </div>
-          </form>
-          <button><a href="log-in.html">Regjistrohu</a></button>
+              <div class="fields">
+                <label for="password"><i class="fa-solid fa-lock"></i>Passwordi Juaj <span>*</span></label>
+                <input type="password" name="password" id="password" placeholder="Passwordi Juaj" required>
+              </div>
+            </form>
+            <button onclick="register()"><a>Regjistrohu</a></button>
 
           <span class="already-member">Posedoni një llogari? <a href="log-in.html">Kyqy</a></span>
         </div>
@@ -54,6 +54,7 @@
     </section>
   </main>
 
+<script src="./javascript/register-and-login.js"></script>
 </body>
 
 </html>

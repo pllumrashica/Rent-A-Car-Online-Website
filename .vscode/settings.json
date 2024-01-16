@@ -1,0 +1,7 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.wait": 60,
+    "editor.formatOnType": true
+}
