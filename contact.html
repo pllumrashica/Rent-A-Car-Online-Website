@@ -71,7 +71,7 @@
   </header>
 
   <main>
-    <section class="hero-banner">
+    <section class="hero-banner" data-entrance="from-top">
       <div class="container">
         <h3>Kontakti</h3>
         <p><a href="#">Kryefaqja</a>
@@ -83,7 +83,7 @@
     <section class="contact-us">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col" data-entrance="from-left">
             <h2>Keni nevojë për informacion shtesë?</h2>
 
             <p>Ju lutemi përdorni formularin në të djathtë për të na kontaktuar me çdo pyetje, koment, sugjerim ose
@@ -101,7 +101,7 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col" data-entrance="from-right">
             <form action="from" id="form">
               <div class="fields">
                 <label for="name">Emri i Plotë <span>*</span></label>
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="touch-with-us">
+    <section class="touch-with-us" data-entrance="fade">
       <div class="bg-overlay">
         <div class="container">
           <div class="text-content">
@@ -143,7 +143,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer data-entrance="fade">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -203,7 +203,7 @@
     emailjs.init('UjzFsejqkEBEgHkWG')
   </script>
   <script src="./javascript/header.js"></script>
-
+  <script src="./javascript/scroll-enterance.js"></script>
 </body>
 
 </html>
